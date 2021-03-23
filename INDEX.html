@@ -1,0 +1,297 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="verticalNav">
+        <img class="logo" src="logo.PNG"/>
+        <img class="searchImage" src="search.png"/>
+        <img class="feed" src="feed.PNG"/>
+        <img class="home" src="home.PNG"/>
+        <img class="list" src="list.PNG"/>
+        <img class="profile" src="profile.PNG"/>
+        <img class="bellImage" src="bell.png"/>
+        <img class="logoutImage" src="logout.png"/>
+      </div>
+      <div class="mainContent">
+        <div class="mainContentContainer1">
+          <div class="mainContentContainer1Head">
+            <div>
+              <img class="mainContentContainer1HeadImage" src="pic.jpg" />
+            </div>
+            <div class="mainContentContainer1HeadProfile">
+              <p style="font:bold; font-size:30;"><b>Hi Mike,</b></p>
+              <p  style="font-size: 13;">welcome back</p>
+            </div>
+          </div>
+          <div class="mainContentContainer1Mid">
+            <div class="firstPara">
+              <p style="font-size: 18; margin-bottom:10px; margin-top: 10px;"><b>Today</b></p>
+              <p style="font-size: 30; font-weight: 800; margin-bottom: 5px;" >$19,892</p>
+              <p style="font-size: 15; color: rgb(61, 60, 60); margin-bottom: 10px;">amount Balance</p>
+            </div>
+            <div  class="mainContentContainer1MidRow">
+              <div class= "para1">
+                <p style="font-size: 18; margin-bottom: 5px;"><b>$4000</b></p>
+                <p style="font-size: 12; color: rgb(61, 60, 60); margin-bottom: 10px;">Year-to-Date-Contribution</p>
+              </div>
+              <div class="para2">
+                <p style="font-size: 18; margin-bottom: 5px;"><b>$1892</b></p>
+                <p style="font-size: 12; color: rgb(61, 60, 60); margin-bottom: 10px;">Total Interest</p>
+              </div>
+            </div>
+            <div >
+              <select  class="selectbutton" style=" border-radius: 8px; ; color: cornsilk; background-color: rgb(102, 5, 192); width: 10vw; height: 40px;">
+                <option  value="option1">I want to</option>
+                <option value="option2">option1</option>
+                <option value="option3"> option2</option>
+              </select> 
+            </div>
+          </div>
+          <div class="mainContentContainer1Low">
+            <p style="font-size: 18; margin-bottom:20px; margin-top: 30px; font-weight: 900;">Recent Transaction</p>
+            <p style="font-size: 12; color: rgb(61, 60, 60); margin-bottom: 10px;"> 2020-08-07</p>
+            <p  style="font-size: 18; margin-bottom: 5px;">Withdraw transfer to Bank - xxx11</p>
+            <p style="font-size: 12; color: rgb(61, 60, 60); margin-bottom: 10px;">2020-08-21</p>
+            <p  style="font-size: 18; margin-bottom: 5px;">Withdraw transfer to Bank - xxx11</p>
+            <p style="font-size: 12; color: rgb(61, 60, 60); margin-bottom: 10px;">2020-08-16</p>
+            <p  style="font-size: 18; margin-bottom: 5px;">Withdraw transfer to Bank - xxx11</p>
+          </div>
+        </div>
+        <div class="mainContentContainer2">
+          <div class="container2first">
+              <p style="color:rgb(199, 9, 199); font-size: 15;">Retirement Income</p>
+              <p style="font-size: 25;"><b>Starting Year 2056</b></p>
+          </div>
+          <div class="container2second">
+            <div class ="paraElement1" style="margin-left: 5vw;">
+               <p style="font-size: 30;"><b>$300,000</b></p>
+               <p style="font-size: 10; color:rgb(109, 107, 107)">My goal</p>
+               <hr style="width:7vw;height:0.3vh;background-color:rgb(234, 2, 255)">
+             </div>
+             <div class="paraElement23" style="margin-left: 4vw;">
+                <div class="paraElement2">
+                    <p style="font-size: 30;"><b>59%</b></p>
+                    <p style="font-size: 10; color:rgb(109, 107, 107)">Goal Acheived</p>
+                    <hr style="width:9vw;height:0.3vh;background-color:rgb(234, 2, 255)">
+                </div>
+                <div class="paraElement3" style="margin-left: 6vw; padding-right: 4vw;">
+                    <p style="font-size: 30;"><b>$300</b></p>
+                    <p style="font-size: 10; color:rgb(109, 107, 107)">Est.Montly Income</p>
+                    <hr style="width:9vw;height:0.3vh;background-color:rgb(234, 2, 255)">
+                </div>
+             </div>
+          </div>
+          <div clas="conatainer2GraphTile" style="margin-left: 5vw; margin-top:5vh;">
+            <p style="font-size:20;"><b>Contribution Overtime</b></p>
+          </div>
+          <div class="graphHeader">
+            <div class= "graphLabel1">
+            <div><hr style="width:1vw; height:1vh; background-color:#0c0246"></div>
+                <div style="font-size:13 ;"> Employer </div><div><b>K 73,500</b></div>
+            </div>
+            <div class= "graphLabel2" >
+              <div><hr style="width:1vw; height:1vh; background-color:#5e0cf7fd"></div>
+              <div  style="font-size:13;">Employee</div> <div class="h2"><b>K 52,500</b></div> 
+            </div>
+            <div class= "graphLabel3"  >
+            <div><hr style="width:1vw; height:1vh; background-color:#7b6ef7f5"></div>
+              <div style="font-size:13;">Total Interest</div> <div><b>K 244,313</b></div>
+            </div>
+          </div>
+          <div class="mainGraph" style="margin-left: 5vw ;margin-right:4vw; margin-top: 1vw; padding-bottom: 3vh;"> 
+            <canvas  id="chart" height="95"></canvas>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+            <script>
+                // Chart code will go here.
+                var ctx = document.getElementById('chart');
+                var myChart = new Chart(ctx, {
+                type: 'bar', 
+                data: {
+                   labels: [20,,25,,30,,35,,40,,60,,65],
+                   datasets: [
+                       
+                            {   
+                                data: [20,25,30,35,40,45,50,60,70,80,85,90,95 ],
+                                backgroundColor: '#0c0246',
+                            },
+                            { 
+                                data: [20,25,30,35,40,45,50,60,70,80,85,90,95],
+                                backgroundColor: '#5e0cf7fd',
+                            },
+                            {    
+                                data: [25,30,35,40,45,50,55,65,75,85,90,95,100],
+                                backgroundColor: '#7b6ef7f5',
+                            }
+        
+                    ]
+                },
+                
+                options: {
+                    scales: {
+                    yAxes: [{stacked:true ,gridLines:{display:true,borderDash:[10],color:"grey",drawBorder:false}
+                    ,ticks:{callback: function(value, index, values){return "$"+value;},fontColor:"black",min:0,max:300,stepSize:100,fontSize:15,fontFamily:"arial"} }],
+                    xAxes: [{stacked:true ,barThickness:12,gridLines:{display:false, drawBorder:false},ticks:{fontSize:12,fontColor:"black"}}]
+                   
+                }  ,legend:{display:false}
+                }
+                });
+        
+              </script>
+          
+          </div>
+          <div class="bottomParaHead">
+            <p style="font-size:18; margin-left: 5vw;"><b>How do i compare to my pairs</b></p>
+            <p style="font-size:13; margin-left:5vw;">These numbers represent current goal achievements</p>
+          </div>
+         <div class="t"> <div class="selectOptions">
+            <div style=" margin-top: 3vh;" ><label>Age : </label>
+              <select  class="selectbutton22" >
+                <option  value="option1">under 30</option>
+                <option value="option2">under50</option>
+                <option value="option3"> 60 plus</option>
+              </select>
+              <hr style="width:10vw;margin-top:1vh; height:0.3vh; background-color:#eeedee">
+            </div>
+               
+            <div style=" margin-top: 2vh;"><label>Salary : </label><select  class="selectbutton22" >
+                <option  value="option1"> K20 - K30</option>
+                <option value="option2">K30 - K40</option>
+                <option value="option3">K40 - K60</option>
+                </select>
+                <hr style=" margin-top:1vh;width:10vw; height:0.3vh; background-color:#e0e0e6">
+            </div> 
+            <div style=" margin-top: 2vh;"><label>Gender : </label>
+              <select  class="selectbutton22" >
+                <option  value="option1">Male</option>
+                <option value="option2">female</option>
+                <option value="option3"> transgender</option>
+              </select> 
+              
+            </div>
+           </div>
+            <div class= "circularGraph"   style=" margin-left: 12vh; padding-right:4vw; margin-top:2vh;">
+                <div>
+                  <div id="myProgress1">
+                    <div id="myBar1">78%</div>
+                  </div>
+                   <label for="file">Average</label>
+                </div>
+                <div><br>
+                  <div id="myProgress2">
+                    <div id="myBar2">95%</div>
+                  </div>
+                  <label for="file">Top</label>
+                </div>
+                 <div><br>
+                  
+                  <div id="myProgress3">
+                    <div id="myBar3">59%</div>
+                  </div>
+                  <label for="file"  >Me</label>
+                 </div>
+            
+          
+            </div>
+         </div>
+        </div>
+          <div class="mainContentContainer3">
+            <div class="bottomParaHead1">
+              <p style="font-size:18; margin-left: 5vw;"><b>How do i compare to my pairs</b></p>
+              <p style="font-size:13; margin-left:5vw;">These numbers represent current goal achievements</p>
+            </div>
+            <div class="e"><div class="selectOptions1" style=" margin-left: 5vh;">
+              <div style=" margin-top: 3vh;" ><label>Age : </label>
+                <select  class="selectbutton22" >
+                  <option  value="option1">under 30</option>
+                  <option value="option2">under50</option>
+                  <option value="option3"> 60 plus</option>
+                </select>
+                <hr style="width:100vw;margin-top:1vh; height:0.3vh; background-color:#e7e5e7">
+              </div>
+                 
+              <div style=" margin-top: 2vh;"><label>Salary : </label><select  class="selectbutton22" >
+                  <option  value="option1"> K20 - K30</option>
+                  <option value="option2">K30 - K40</option>
+                  <option value="option3">K40 - K60</option>
+                  </select>
+                  <hr style=" margin-top:1vh;width:100vw; height:0.3vh; background-color:#dededf">
+              </div> 
+              <div style=" margin-top: 2vh;"><label>Gender : </label>
+                <select  class="selectbutton22" >
+                  <option  value="option1">Male</option>
+                  <option value="option2">female</option>
+                  <option value="option3"> transgender</option>
+                </select> 
+                <hr style=" margin-top:1vh;width:100vw; height:0.3vh; background-color:#dedee4">
+               </div>
+             </div>
+              <div class= "circularGraph1">
+                <div>
+                  <div id="myProgress1">
+                    <div id="myBar1">78%</div>
+                  </div>
+                   <label for="file">Average</label>
+                </div>
+                <div><br>
+                  <div id="myProgress2">
+                    <div id="myBar2">95%</div>
+                  </div>
+                  <label for="file">Top</label>
+                </div>
+                 <div><br>
+                  
+                  <div id="myProgress3">
+                    <div id="myBar3">59%</div>
+                  </div>
+                  <label for="file"  >Me</label>
+                 </div>
+            
+              </div>
+          </div>
+              <div style='margin-left:4vw ;'>
+                
+                  <p style="font-size:20; margin-top: 8vh;  margin-bottom: 2vh;" ><B>Retirement Strategy</B> </p>
+                  
+              </div>  
+              <div style='margin-left:4vw ;'>
+                  <div class="slidecontainer">
+                    <p style="font-size:15; margin-top: 3vh;  margin-bottom: 2vh;"><b>Employee Contribution</b>  </p>
+                    <p><input id="slide2" type="range" min="1" max="100" value="60" id="myRange2">  
+                     &nbsp &nbsp 12%</p>
+                  </div>
+
+
+              </div>
+              <div style='margin-left:4vw ;'>
+                  <div class="slidecontainer">
+                    <p style="font-size:15; margin-top: 3vh;  margin-bottom: 2vh;"> <b>Retirement Age</b></p>
+                    <p><input id="slide1" type="range" min="1" max="70" value="60" id="myRange1">  
+                      &nbsp &nbsp 60<span id="demo5"></span></p>
+                  </div>
+                  <script>
+                      var slider = document.getElementById("myRange1");
+                      var output = document.getElementById("demo5");
+                      output.innerHTML = slider.value;
+                  
+                      slider.oninput = function() 
+                      {
+                        output.innerHTML = slider.value;
+                      }
+                  </script>
+              </div>
+            
+            <div  style='margin-left:4vw ;'>
+              <p style="font-size:15; margin-top: 5vh;  margin-bottom: 2vh;"><b>Employee Contribution  &nbsp &nbsp &nbsp 8.4%</b></p>
+              <p style="font-size:15; margin-top: 3vh;  margin-bottom: 3vh;"><b>Inerest Rate  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 5%</b></p>
+            </div>
+            <div   >
+              <button class='updateb' style='  color:honeydew ;width:80%; height:40px; border-radius:12% ; background-color:rgb(74, 2, 141);'>Update</button>
+            </div>
+            <p id="link" style="font-size:14;margin-left: 7vw;; margin-top: 5vh;  margin-bottom: 2vh; color:rgb(112, 4, 189)"><b>view help doc ></b> </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
